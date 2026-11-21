@@ -1,0 +1,5 @@
+.table-scroll { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--line); }
+.comparison { width: 100%; min-width: 36rem; border-collapse: collapse; text-align: left; font-size: .94rem; }
+.comparison :is(th, td) { vertical-align: top; padding: .65rem .75rem; border-bottom: 1px solid var(--line); }
+.comparison thead { background: #e5ede1; }
+.comparison tbody tr:last-child > * { border-bottom: 0; }
