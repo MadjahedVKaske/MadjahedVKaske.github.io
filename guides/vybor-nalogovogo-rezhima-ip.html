@@ -9,15 +9,18 @@
 <link rel="stylesheet" href="/azbuka.css">
 <script type="module" src="/tax-mode.js"></script>
 </head>
-<body><main class="wrap registration mode-reference"><article>
-<p><a href="/">Азбука ИП</a></p>
+<body><a class="skip" href="#main">К содержанию</a>
+<header class="site-head wrap"><a class="wordmark" href="/">Азбука <b>ИП</b></a><nav aria-label="Основное меню"><a href="/guides/kak-otkryt-ip.html">Открыть ИП</a><a href="/vesti-delo.html">Вести дело</a><a href="/rasschitat-nalogi.html">Рассчитать налоги</a></nav></header>
+<main id="main" class="wrap registration mode-reference"><p class="section-back"><a href="/rasschitat-nalogi.html">Рассчитать налоги</a></p>
+<article>
 <h1>Как выбрать налоговый режим для ИП</h1>
 <p class="guide-lead">Начните с видов деятельности, региона и дохода. Затем сравните общую нагрузку: налог, взносы и НДС.</p>
 <p>Условия приведены для 2026 года.</p>
 <section class="mode-tool" aria-labelledby="mode-title">
 <h2 id="mode-title">Подбор по вашим данным</h2>
 <p>Укажите ожидаемые доходы и расходы за весь 2026 год. Помощник проверит основные условия и подскажет, что уточнить перед переходом.</p>
-<form id="mode-form" class="mode-form">
+<noscript><p>Для подбора включите JavaScript. Ниже — условия режимов и ссылки на ФНС.</p></noscript>
+<form id="mode-form" class="mode-form" hidden>
 <label>Регион регистрации ИП <select name="region" required><option value="">Выберите регион</option><option value="22">Алтайский край</option>
 <option value="28">Амурская область</option>
 <option value="29">Архангельская область</option>
@@ -116,6 +119,7 @@
 <section id="mode-results" tabindex="-1" aria-labelledby="mode-result-title" hidden>
 <h2 id="mode-result-title">Какие режимы рассмотреть</h2>
 <p>Результат основан на введённых данных. Перед переходом проверьте условия ФНС. Оценки УСН даны по базовым ставкам, без НДС и взносов.</p>
+<p id="mode-stale" role="status" hidden>Данные изменились. Ниже предыдущий результат. Нажмите «Показать подходящие режимы», чтобы обновить его.</p>
 <div id="mode-list"></div>
 <p><a class="primary" href="https://ip-tax-calculator-2026.polite-fig-0331.chatgpt.site/">Рассчитать УСН и патент</a></p>
 </section>
@@ -135,5 +139,6 @@
 <p><a class="guide-cta" href="https://ip-tax-calculator-2026.polite-fig-0331.chatgpt.site/">Сравнить расчёты УСН и патента</a></p>
 <h2>3. Проверьте срок перехода</h2>
 <p>Если открываете ИП, уведомление об УСН можно подать вместе с заявлением на регистрацию или в течение 30 календарных дней с даты постановки на учёт. Если ИП уже работает, срок зависит от текущего режима и даты перехода. Патент оформляют отдельным заявлением. <a href="https://www.nalog.gov.ru/rn77/service/mp/">Сроки и условия перехода</a>.</p>
-</article></main></body>
+</article></main>
+<footer class="wrap site-foot"><a href="/">Азбука ИП</a></footer></body>
 </html>

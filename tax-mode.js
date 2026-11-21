@@ -3,6 +3,7 @@ import {evaluateModes} from './tax-mode-rules.mjs';
 const form = document.querySelector('#mode-form');
 const results = document.querySelector('#mode-results');
 const list = document.querySelector('#mode-list');
+const stale = document.querySelector('#mode-stale');
 const labels = {yes: 'Подходит по введённым данным', check: 'Нужно уточнить', no: 'Есть ограничение'};
 const compact = input => input.value.replace(/[\s\u00a0\u202f]/g, '');
 const rubles = new Intl.NumberFormat('ru-RU', {maximumFractionDigits: 2});
@@ -19,7 +20,7 @@ for (const input of form.querySelectorAll('[data-money]')) {
 
 form.addEventListener('input', event => {
   event.target.setCustomValidity('');
-  results.hidden = true;
+  if (!results.hidden) stale.hidden = false;
 });
 
 form.addEventListener('submit', event => {
@@ -48,6 +49,9 @@ form.addEventListener('submit', event => {
     row.querySelector('a').href = item.url;
     return row;
   }));
+  stale.hidden = true;
   results.hidden = false;
   results.focus();
 });
+
+form.hidden = false;

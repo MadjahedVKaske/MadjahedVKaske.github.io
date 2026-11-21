@@ -61,3 +61,21 @@ input { accent-color: var(--green); }
 .mode-row strong[data-status="no"] { color: #863925; }
 .mode-reference { padding-bottom: 2rem; }
 @media (max-width: 39rem) { .mode-form { grid-template-columns: 1fr; } }
+
+.site-head nav a { display: inline-flex; align-items: center; min-height: 2.6rem; }
+.site-head nav a[aria-current="page"] { font-weight: 750; text-decoration-thickness: .16em; }
+.hero { padding-block: clamp(1.75rem, 4vw, 3.4rem); }
+.hero h1 { font-size: clamp(2.75rem, 6vw, 5.3rem); }
+.section-back { margin: 0 0 .7rem; }
+.registration article > p, .registration article > ul, .registration article > ol { max-width: 70ch; }
+.registration article h2 { margin-top: 1.3em; }
+.registration article .mode-tool h2:first-child { margin-top: 0; }
+.article-table { overflow-x: auto; margin: 1rem 0; }
+.article-table table { border-collapse: collapse; text-align: left; }
+.article-table :is(td, th) { padding: .45rem .65rem; border: 1px solid var(--line); }
+.table-hint { display: none; }
+#mode-stale { padding: .5rem .75rem; background: #f8f7f1; }
+@media (max-width: 39rem) {
+  .table-hint { display: block; font-size: .9em; }
+  .site-head nav { gap: .15rem 1rem; }
+}
