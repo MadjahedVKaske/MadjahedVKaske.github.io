@@ -6,13 +6,121 @@
 <title>Как выбрать налоговый режим для ИП в 2026 году — Азбука ИП</title>
 <meta name="description" content="Как сравнить УСН, патент, НПД, АвтоУСН, ОСНО и ЕСХН. Что проверить перед выбором режима и когда подать уведомление.">
 <link rel="canonical" href="https://ipabc.ru/guides/vybor-nalogovogo-rezhima-ip.html">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/azbuka.css">
+<script type="module" src="/tax-mode.js"></script>
 </head>
-<body><main class="guide"><article>
+<body><main class="wrap registration mode-reference"><article>
 <p><a href="/">Азбука ИП</a></p>
 <h1>Как выбрать налоговый режим для ИП</h1>
 <p class="guide-lead">Начните с видов деятельности, региона и дохода. Затем сравните общую нагрузку: налог, взносы и НДС.</p>
 <p>Условия приведены для 2026 года.</p>
+<section class="mode-tool" aria-labelledby="mode-title">
+<h2 id="mode-title">Подбор по вашим данным</h2>
+<p>Укажите ожидаемые доходы и расходы за весь 2026 год. Помощник проверит основные условия и подскажет, что уточнить перед переходом.</p>
+<form id="mode-form" class="mode-form">
+<label>Регион регистрации ИП <select name="region" required><option value="">Выберите регион</option><option value="22">Алтайский край</option>
+<option value="28">Амурская область</option>
+<option value="29">Архангельская область</option>
+<option value="30">Астраханская область</option>
+<option value="31">Белгородская область</option>
+<option value="32">Брянская область</option>
+<option value="33">Владимирская область</option>
+<option value="34">Волгоградская область</option>
+<option value="35">Вологодская область</option>
+<option value="36">Воронежская область</option>
+<option value="77">город Москва</option>
+<option value="92">город Севастополь</option>
+<option value="93">Донецкая Народная Республика</option>
+<option value="79">Еврейская автономная область</option>
+<option value="75">Забайкальский край</option>
+<option value="90">Запорожская область</option>
+<option value="37">Ивановская область</option>
+<option value="38">Иркутская область</option>
+<option value="07">Кабардино-Балкарская Республика</option>
+<option value="39">Калининградская область</option>
+<option value="40">Калужская область</option>
+<option value="41">Камчатский край</option>
+<option value="09">Карачаево-Черкесская Республика</option>
+<option value="42">Кемеровская область  - Кузбасс</option>
+<option value="43">Кировская область</option>
+<option value="44">Костромская область</option>
+<option value="23">Краснодарский край</option>
+<option value="24">Красноярский край</option>
+<option value="45">Курганская область</option>
+<option value="46">Курская область</option>
+<option value="47">Ленинградская область</option>
+<option value="48">Липецкая область</option>
+<option value="94">Луганская Народная Республика</option>
+<option value="49">Магаданская область</option>
+<option value="50">Московская область</option>
+<option value="51">Мурманская область</option>
+<option value="52">Нижегородская область</option>
+<option value="53">Новгородская область</option>
+<option value="54">Новосибирская область</option>
+<option value="55">Омская область</option>
+<option value="56">Оренбургская область</option>
+<option value="57">Орловская область</option>
+<option value="58">Пензенская область</option>
+<option value="59">Пермский край</option>
+<option value="25">Приморский край</option>
+<option value="60">Псковская область</option>
+<option value="01">Республика Адыгея</option>
+<option value="04">Республика Алтай</option>
+<option value="02">Республика Башкортостан</option>
+<option value="03">Республика Бурятия</option>
+<option value="05">Республика Дагестан</option>
+<option value="06">Республика Ингушетия</option>
+<option value="08">Республика Калмыкия</option>
+<option value="10">Республика Карелия</option>
+<option value="11">Республика Коми</option>
+<option value="91">Республика Крым</option>
+<option value="12">Республика Марий Эл</option>
+<option value="13">Республика Мордовия</option>
+<option value="14">Республика Саха (Якутия)</option>
+<option value="15">Республика Северная Осетия-Алания</option>
+<option value="16">Республика Татарстан</option>
+<option value="17">Республика Тыва</option>
+<option value="19">Республика Хакасия</option>
+<option value="61">Ростовская область</option>
+<option value="62">Рязанская область</option>
+<option value="63">Самарская область</option>
+<option value="78">Санкт-Петербург</option>
+<option value="64">Саратовская область</option>
+<option value="65">Сахалинская область</option>
+<option value="66">Свердловская область</option>
+<option value="67">Смоленская область</option>
+<option value="26">Ставропольский край</option>
+<option value="68">Тамбовская область</option>
+<option value="69">Тверская область</option>
+<option value="70">Томская область</option>
+<option value="71">Тульская область</option>
+<option value="72">Тюменская область</option>
+<option value="18">Удмуртская Республика</option>
+<option value="73">Ульяновская область</option>
+<option value="27">Хабаровский край</option>
+<option value="86">Ханты-Мансийский автономный округ-Югра</option>
+<option value="95">Херсонская область</option>
+<option value="74">Челябинская область</option>
+<option value="20">Чеченская Республика</option>
+<option value="21">Чувашская Республика</option>
+<option value="87">Чукотский АО</option>
+<option value="89">Ямало-Ненецкий автономный округ</option>
+<option value="76">Ярославская область</option></select></label>
+<label>Основная деятельность <select name="activity" required><option value="">Выберите деятельность</option><option value="services">Услуги или работы</option><option value="software">Разработка ПО</option><option value="own">Производство и продажа своих товаров</option><option value="resale">Перепродажа товаров</option><option value="agency">Посредническая деятельность</option><option value="farm">Сельхозпроизводство</option><option value="other">Другая или несколько видов</option></select></label>
+<label>Доход за 2026 год, ₽ <input name="income" inputmode="decimal" data-money required></label>
+<label>Расходы за 2026 год, ₽ <input name="expenses" inputmode="decimal" data-money required></label>
+<label>Сотрудники <input name="employees" type="number" min="0" max="1000000" step="1" value="0" required><small>Для УСН, ПСН и АУСН ориентируйтесь на среднюю численность. Для НПД важны работники по трудовым договорам.</small></label>
+<label>Доход за 2025 год, ₽ <input name="priorIncome" inputmode="decimal" data-money><small>Если в 2025 году дохода не было, укажите 0. Поле помогает проверить ПСН и НДС.</small></label>
+<div><button class="primary" type="submit">Показать подходящие режимы</button></div>
+</form>
+<section id="mode-results" tabindex="-1" aria-labelledby="mode-result-title" hidden>
+<h2 id="mode-result-title">Какие режимы рассмотреть</h2>
+<p>Результат основан на введённых данных. Перед переходом проверьте условия ФНС. Оценки УСН даны по базовым ставкам, без НДС и взносов.</p>
+<div id="mode-list"></div>
+<p><a class="primary" href="https://calc.ipabc.ru/">Рассчитать УСН и патент</a></p>
+</section>
+<template id="mode-template"><section class="mode-row"><h3></h3><strong></strong><p></p><a>Условия ФНС</a></section></template>
+</section>
 <h2>1. Проверьте, какие режимы вам доступны</h2>
 <ul>
 <li><strong>НПД.</strong> Проверьте, если ожидаете до 2,4 млн ₽ за год и у вас нет работников по трудовым договорам. Перепродажа товаров исключает этот вариант. Ставки — 4% с доходов от физлиц и 6% с доходов от ИП и организаций. <a href="https://npd.nalog.ru/">Условия НПД</a>.</li>

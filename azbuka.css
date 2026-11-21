@@ -48,3 +48,16 @@ input { accent-color: var(--green); }
   .hero, .sections, .journey { grid-template-columns: 1fr; }
 }
 
+
+.mode-tool { margin: 2rem 0; padding: clamp(1rem, 4vw, 2rem); background: #e5ede1; }
+.mode-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.4rem; margin-block: 1.4rem; }
+.mode-form label { min-width: 0; font-weight: 650; }
+.mode-form small { display: block; font-weight: 400; margin-top: .35rem; }
+.mode-form input, .mode-form select { font: inherit; color: inherit; background: #fff; border: 1px solid #718279; border-radius: .25rem; padding: .5rem; display: block; width: 100%; margin-top: .3rem; }
+.mode-form button { font: inherit; border: 0; cursor: pointer; }
+.mode-row { border-top: 1px solid var(--line); padding: .75rem 0; }
+.mode-row h3, .mode-row p { margin: .35rem 0; }
+.mode-row strong[data-status="yes"] { color: #184837; }
+.mode-row strong[data-status="no"] { color: #863925; }
+.mode-reference { padding-bottom: 2rem; }
+@media (max-width: 39rem) { .mode-form { grid-template-columns: 1fr; } }
