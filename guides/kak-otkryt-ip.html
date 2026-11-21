@@ -3,28 +3,57 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Как открыть ИП онлайн или в налоговой — Азбука ИП</title>
-<meta name="description" content="Чек-лист документов для открытия ИП, форма Р21001, госпошлина и способы подачи.">
+<title>Открыть ИП онлайн или в налоговой — Азбука ИП</title>
+<meta name="description" content="Чек-лист документов, подача заявления Р21001 онлайн или лично и шаги после регистрации ИП.">
 <link rel="canonical" href="https://ipabc.ru/guides/kak-otkryt-ip.html">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/azbuka.css">
+<script src="/registration.js" defer></script>
 </head>
-<body><main class="guide"><article>
-<p><a href="/">Азбука ИП</a></p>
-<h1>Как открыть ИП</h1>
-<p class="guide-lead">Подайте заявление онлайн или принесите его в регистрирующую налоговую. Ниже список для совершеннолетнего гражданина России.</p>
-<h2>Что подготовить</h2>
-<ol>
-<li><strong>Заявление Р21001.</strong> Для заполнения понадобятся данные паспорта, коды ОКВЭД и электронная почта, на которую ФНС пришлёт результат.</li>
-<li><strong>Паспорт.</strong> Для личной подачи возьмите оригинал. При онлайн-подаче используйте способ идентификации и подписания, предложенный сервисом.</li>
-<li><strong>Подтверждение уплаты 800 ₽.</strong> Это госпошлина за бумажную подачу в регистрирующую налоговую. При электронной подаче госпошлины нет.</li>
-</ol>
-<p>Если в удостоверении личности нет адреса места жительства, подготовьте документ с адресом. У иностранцев, несовершеннолетних и заявителей, которые подают документы через представителя, пакет отличается. <a href="https://www.nalog.gov.ru/rn77/related_activities/registration_ip_yl/registration_ip/order/">Полный перечень ФНС</a>.</p>
-<h2>Как подать</h2>
-<ul>
-<li><strong>Онлайн.</strong> Заполните заявление в сервисе ФНС, подпишите личной УКЭП или через «Госключ» и отправьте. <a href="https://service.nalog.ru/gosreg/">Государственная онлайн-регистрация бизнеса</a>.</li>
-<li><strong>Лично.</strong> Подайте пакет в регистрирующую инспекцию по месту жительства. Проверьте адрес инспекции перед визитом. <a href="https://service.nalog.ru/addrno.do">Поиск инспекции ФНС</a>.</li>
-<li><strong>Через МФЦ или нотариуса.</strong> Уточните, принимает ли выбранный МФЦ документы на открытие ИП. При электронной передаче госпошлины нет. Нотариус может взимать оплату за свою услугу.</li>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="site-head wrap"><a class="wordmark" href="/">Азбука <b>ИП</b></a><nav aria-label="Основное меню"><a href="/" >На главную</a><a href="/#tax">Рассчитать налоги</a></nav></header>
+<main id="main" class="wrap registration">
+<h1>Открыть ИП</h1>
+<p class="intro">Маршрут для совершеннолетнего гражданина России. Для подачи через представителя, иностранцев и несовершеннолетних проверьте <a href="https://www.nalog.gov.ru/rn77/related_activities/registration_ip_yl/registration_ip/order/">дополнительные требования ФНС</a>.</p>
+<fieldset id="method" class="method" hidden><legend>Как подадите заявление?</legend><label><input name="method" type="radio" value="online" checked> Онлайн</label><label><input name="method" type="radio" value="office"> Лично в налоговой</label></fieldset>
+<div class="journey">
+<div>
+<section data-route="online">
+<h2>1. Подготовьте документы для онлайн-подачи</h2>
+<ul class="checklist">
+<li><label><input type="checkbox"> Паспортные данные, коды ОКВЭД и адрес электронной почты для результата.</label></li>
+<li><label><input type="checkbox"> Заявление Р21001, заполненное в сервисе ФНС.</label></li>
+<li><label><input type="checkbox"> Действующая личная УКЭП или возможность подписать заявление через «Госключ».</label></li>
 </ul>
-<p>Если пакет в порядке, ФНС направит результат на электронную почту. Стандартный срок — три рабочих дня после поступления документов в регистрирующий орган. <a href="https://www.nalog.gov.ru/create_business/ip/creation/registration/step4/">Что выдаёт ФНС</a>.</p>
-<p>Если выбрали УСН, уведомление № 26.2-1 можно подать вместе с регистрацией или в течение 30 календарных дней с даты постановки на учёт. <a href="/guides/vybor-nalogovogo-rezhima-ip.html">Как выбрать налоговый режим</a>.</p>
-</article></main></body></html>
+<h2>2. Подпишите и отправьте заявление</h2>
+<p>При электронной подаче госпошлины нет. Для полностью дистанционного маршрута заявление нужно подписать электронно. Если сервис предлагает подачу с подтверждением личности в инспекции, потребуется визит.</p>
+<p><a class="primary" href="https://service.nalog.ru/gosreg/">Открыть сервис ФНС</a></p>
+</section>
+<section data-route="office">
+<h2>1. Соберите документы для визита</h2>
+<ul class="checklist">
+<li><label><input type="checkbox"> Распечатанное заявление Р21001 с кодами ОКВЭД и электронной почтой.</label></li>
+<li><label><input type="checkbox"> Оригинал паспорта и документ об адресе, если в удостоверении личности адрес не указан.</label></li>
+<li><label><input type="checkbox"> Госпошлина 800 ₽ за бумажную подачу непосредственно в налоговую. Сохраните квитанцию.</label></li>
+</ul>
+<h2>2. Подайте документы лично</h2>
+<p>Найдите регистрирующую инспекцию по месту жительства. Возьмите пакет и подпишите заявление при инспекторе, если подпись заранее не удостоверена нотариально.</p>
+<p><a class="primary" href="https://service.nalog.ru/addrno.do">Найти инспекцию</a></p>
+</section>
+<section class="after" id="after">
+<h2>3. Получите результат и сделайте первые шаги</h2>
+<p>Если документы в порядке, ФНС зарегистрирует ИП в течение трёх рабочих дней после получения пакета. Лист записи ЕГРИП приходит на указанную почту. <a href="https://www.nalog.gov.ru/create_business/ip/creation/registration/step4/">Что выдаёт ФНС</a>.</p>
+<ul class="checklist">
+<li><label><input type="checkbox"> Сохраните лист записи ЕГРИП и проверьте сведения о себе.</label></li>
+<li><label><input type="checkbox"> Проверьте налоговый режим. Если выбрали УСН и не подали уведомление вместе с заявлением, срок — 30 календарных дней с постановки на учёт.</label> <a href="/guides/vybor-nalogovogo-rezhima-ip.html">Выбрать режим</a>.</li>
+<li><label><input type="checkbox"> Проверьте, понадобятся ли счёт, электронная подпись и ЭДО.</label> <a href="/#work">Подключить нужное</a>.</li>
+<li><label><input type="checkbox"> До первого расчёта с клиентом проверьте, нужна ли онлайн-касса.</label> <a href="https://www.nalog.gov.ru/create_business/ip/in_progress/kkt/">Правила ФНС</a>.</li>
+</ul>
+</section>
+</div>
+<aside id="progress" class="progress" hidden><h2>Ваш чек-лист</h2><p id="progress-text" role="status"></p><progress id="progress-bar" aria-label="Выполнение чек-листа"></progress><a href="#after">Что делать после регистрации</a></aside>
+</div>
+<p class="sources"><a href="https://www.nalog.gov.ru/rn77/related_activities/registration_ip_yl/registration_ip/order/">Официальный порядок регистрации ФНС</a></p>
+</main>
+<footer class="wrap site-foot"><a href="/">Азбука ИП</a></footer>
+</body></html>
