@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://madjahedvkaske.github.io/sitemap.xml
